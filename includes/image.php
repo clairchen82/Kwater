@@ -304,7 +304,7 @@ if (strtolower($message['text']) == "請選擇產品類別" || $message['text'] 
      
               array (
                 'type' => 'flex',
-                'altText' => 'Flex Message',
+                'altText' => '已傳送QRcode',
                 'contents' => 
                 array (
                   'type' => 'bubble',
