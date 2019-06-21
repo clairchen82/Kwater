@@ -304,7 +304,7 @@ if (strtolower($message['text']) == "請選擇產品類別" || $message['text'] 
      
               array (
                 'type' => 'flex',
-                'altText' => '已傳送QRcode',
+                'altText' => 'Flex Message',
                 'contents' => 
                 array (
                   'type' => 'bubble',
@@ -317,7 +317,12 @@ if (strtolower($message['text']) == "請選擇產品類別" || $message['text'] 
                     array (
                       0 => 
                       array (
-                        'type' => 'separator',
+                        'type' => 'text',
+                        'text' => 'Key．System',
+                        'size' => 'xxl',
+                        'align' => 'center',
+                        'weight' => 'bold',
+                        'color' => '#1D608E',
                       ),
                     ),
                   ),
