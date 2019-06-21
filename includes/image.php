@@ -318,7 +318,7 @@ if (strtolower($message['text']) == "請選擇產品類別" || $message['text'] 
                       0 => 
                       array (
                         'type' => 'text',
-                        'text' => 'Key．System',
+                        'text' => 'K．System',
                         'size' => 'xxl',
                         'align' => 'center',
                         'weight' => 'bold',
