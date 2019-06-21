@@ -297,7 +297,7 @@ if (strtolower($message['text']) == "請選擇產品類別" || $message['text'] 
 
 
 
-      if (strtolower($message['text']) == "請選擇產品類別" || $message['text'] == "產品介紹") {
+      if (strtolower($message['text']) == "Q" || $message['text'] == "q") {
         $client->replyMessage(array(
             'replyToken' => $event['replyToken'],
             'messages' => array(
