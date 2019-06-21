@@ -291,11 +291,66 @@ if (strtolower($message['text']) == "請選擇產品類別" || $message['text'] 
           ));
       }
       
-      
+    
 
 
 
 
+
+      if (strtolower($message['text']) == "請選擇產品類別" || $message['text'] == "產品介紹") {
+        $client->replyMessage(array(
+            'replyToken' => $event['replyToken'],
+            'messages' => array(
+     
+              array (
+                'type' => 'flex',
+                'altText' => '已傳送QRcode',
+                'contents' => 
+                array (
+                  'type' => 'bubble',
+                  'direction' => 'ltr',
+                  'header' => 
+                  array (
+                    'type' => 'box',
+                    'layout' => 'vertical',
+                    'contents' => 
+                    array (
+                      0 => 
+                      array (
+                        'type' => 'separator',
+                      ),
+                    ),
+                  ),
+                  'hero' => 
+                  array (
+                    'type' => 'image',
+                    'url' => 'https://kwater.herokuapp.com/assets/QRcode.png',
+                    'size' => 'full',
+                    'aspectRatio' => '1.51:1',
+                    'aspectMode' => 'fit',
+                  ),
+                  'body' => 
+                  array (
+                    'type' => 'box',
+                    'layout' => 'vertical',
+                    'contents' => 
+                    array (
+                      0 => 
+                      array (
+                        'type' => 'text',
+                        'text' => '立即掃描即可加入 !',
+                        'align' => 'center',
+                      ),
+                    ),
+                  ),
+                ),
+              )
+
+    
+          
+              )
+            ));
+        }
 
 
 
