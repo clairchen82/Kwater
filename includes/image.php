@@ -360,47 +360,7 @@ if (strtolower($message['text']) == "請選擇產品類別" || $message['text'] 
 
 
 
-        
-      if (strtolower($message['text']) == "TEST" || $message['text'] == "測試") {
-        $client->replyMessage(array(
-            'replyToken' => $event['replyToken'],
-            'messages' => array(
      
-              array (
-                'type' => 'flex',
-                'altText' => 'LIFF測試',
-                'contents' => 
-                array (
-                  'type' => 'bubble',
-                  'direction' => 'ltr',
-                  'footer' => 
-                  array (
-                    'type' => 'box',
-                    'layout' => 'horizontal',
-                    'contents' => 
-                    array (
-                      0 => 
-                      array (
-                        'type' => 'button',
-                        'action' => 
-                        array (
-                          'type' => 'uri',
-                          'label' => '測試liff',
-                          'uri' => 'line://app/1571536843-Nm61BmoR',
-                        ),
-                      ),
-                    ),
-                  ),
-                ),
-              )
-    
-          
-              )
-            ));
-        }
-
-
-
 
 
 
