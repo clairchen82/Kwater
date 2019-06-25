@@ -216,7 +216,7 @@ if (strtolower($message['text']) == "請選擇產品類別" || $message['text'] 
                         1 => 
                         array (
                           'type' => 'text',
-                          'text' => 'ID: 0934185226',
+                          'text' => 'ID: 0934185225',
                           'color' => '#818181',
                         ),
                       ),
